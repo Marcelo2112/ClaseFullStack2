@@ -19,8 +19,14 @@ formularioJS.addEventListener("submit", function (event) {
     console.log(passwordLogin);
 
     if (validarUsuario(nombreLogin, passwordLogin)) {
+        window.location = "dashboard.html"
+
         return;
     }
+
+    // alert('Credenciales incorrectas');
+
+
 
 
 })
@@ -28,7 +34,7 @@ formularioJS.addEventListener("submit", function (event) {
 function validarUsuario(nombre, password) {
 
     if (nombre === usuarioBDD.nombre && password === usuarioBDD.password) {
-        alert("Usurio logeado")
+        // alert("Usurio logeado");
         return true
     }
 

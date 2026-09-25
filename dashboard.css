@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+
+/* BARRA LATERAL (SOLO EL ESTILO) */
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+
+    background-color: #1e293b;
+    color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    padding: 25px 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* enlances */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+
+    padding: 12px;
+
+    border-radius: 8px;
+}
+
+.menu a:hover {
+    background-color: #334155;
+}
+
+
+/* contenido main */
+
+.contenido {
+    margin-left: 240px;
+    padding: 40px;
+}
+
+.contenido h1 {
+    margin-bottom: 10px;
+}
+
+.contenido>p {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CONTENEDOR DE CARDS
+========================= */
+
+.contenedorCards {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* CARD */
+
+
+
+
+.card {
+    background-color: white;
+
+    width: 100%;
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* ICONO */
+
+.icono {
+    width: 60px;
+    height: 60px;
+
+    background-color: #dbeafe;
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+}
+
+
+/* textos de card */
+
+.cardInfo h3 {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: normal;
+
+    color: #64748b;
+}
+
+.cardInfo p {
+    margin: 8px 0 0;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #1e293b;
+}
