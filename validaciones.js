@@ -32,7 +32,7 @@ formularioJS.addEventListener("submit", function (event) {
     console.log("Pais: ", pais);
 
     const usuario = {
-        nombre: nombre,
+        nombreArray: nombre,
         apellido: apellido,
         telefono: telefono,
         pais: pais
